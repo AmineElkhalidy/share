@@ -12,7 +12,7 @@ const CreatePrompt = () => {
     tag: "",
   });
 
-  const session = useSession();
+  const { data: session } = useSession();
   const router = useRouter();
 
   const createPrompt = async (e) => {
